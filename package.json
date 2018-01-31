@@ -1,0 +1,39 @@
+{
+  "name": "grafana-advance-html-panel",
+  "version": "0.1.0",
+  "description": "Advance HTML panel for grafana",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Warning: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yesoreyeram/grafana-advance-html-panel.git"
+  },
+  "keywords": [
+    "grafana",
+    "plugin",
+    "panel",
+    "html"
+  ],
+  "author": "Sriramajeyam Sugumaran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yesoreyeram/grafana-advance-html-panel/issues"
+  },
+  "homepage": "https://github.com/yesoreyeram/grafana-advance-html-panel#readme",
+  "devDependencies": {
+    "@types/lodash": "^4.14.74",
+    "grafana-sdk-mocks": "github:grafana/grafana-sdk-mocks",
+    "grunt": "^0.4.5",
+    "load-grunt-tasks": "^3.2.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-typescript": "^0.8.0",
+    "plugin-typescript": "^7.1.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
