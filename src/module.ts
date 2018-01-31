@@ -34,7 +34,7 @@ GrafanaAdvanceHTMLCtrl.prototype.render = function () {
             if (d.type && d.type.toLowerCase() === "html") {
                 return {
                     data: d.data,
-                    html: d.html
+                    html: this.$sce.trustAsHtml(d.html)
                 }
             }
             else return {

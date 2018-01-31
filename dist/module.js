@@ -39,12 +39,13 @@ System.register(["./app/app", "lodash"], function(exports_1) {
                 return GrafanaAdvanceHTMLCtrl;
             })(app_1.MetricsPanelCtrl);
             GrafanaAdvanceHTMLCtrl.prototype.render = function () {
+                var _this = this;
                 if (this.dataReceived) {
                     this.panel.output = this.dataReceived.map(function (d) {
                         if (d.type && d.type.toLowerCase() === "html") {
                             return {
                                 data: d.data,
-                                html: d.html
+                                html: _this.$sce.trustAsHtml(d.html)
                             };
                         }
                         else
